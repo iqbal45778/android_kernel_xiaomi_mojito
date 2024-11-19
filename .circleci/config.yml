@@ -5,7 +5,7 @@ jobs:
       - image: ghcr.io/neutron-toolchains/docker-image:arch-neutron
    steps:
       - run:
-          no_output_timeout: 50m
+          no_output_timeout: 60m
           command: |
            git clone https://github.com/iqbal45778/android_kernel_xiaomi_mojito -b a11/main --depth=1 kernel 
            cd kernel
